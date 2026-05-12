@@ -78,7 +78,7 @@
         <form id="miFormulario" class="row g-3">
             <div class="col-md-6">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required minlength="3" maxlength="20" placeholder="Tu Nombre">
+                <input type="text" class="form-control" id="nombre" required pattern="[A-Za-z]+" minlength="3" maxlength="20" placeholder="Tu Nombre">
             </div>
             <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
@@ -86,7 +86,7 @@
             </div>
             <div class="col-12">
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4" required minlength="3" maxlength="30" placeholder="Dejanos un mensaje"></textarea>
+                <textarea class="form-control" id="mensaje" rows="4" required  minlength="3" maxlength="30" placeholder="Dejanos un mensaje"></textarea>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-violet">Enviar</button>
