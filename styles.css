@@ -1,0 +1,190 @@
+/* Tipografía llamativa */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6e5e6;
+    color: #333;
+}
+
+/* Navbar violeta */
+.bg-darkviolet {
+    background-color: #6a0dad !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #fdfdfd !important;
+}
+
+/* Carrusel */
+
+.slider-box {    
+    width: 1000px;
+    height: auto;
+    margin: 80px auto 0; 
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 30px;
+    width: 200%;
+    animation: slide 25s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 40%;
+    list-style: none;
+    position:relative;
+}
+
+.texto {
+    background-color:rgba(106, 13, 173, 0.7);
+    position:absolute;
+    text-align:center;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: #d3c9c9;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.slider-box img {    
+    padding-top: 0%;
+    object-fit: cover;
+    width: 35%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes slide {
+
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+    
+/* Carrusel responsive*/
+}
+@media(max-width: 991px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+
+    .texto {
+        top: 50px;
+        padding: 0 25px;
+    }
+
+    .texto h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+}
+
+
+/* Mensaje de agradecimiento debajo del formulario */
+#mensajeGracias {
+    max-width: 600px;
+    width: 95%;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Estilos para alertas */
+.alert-success {
+    background-color: #d9b3ff;
+    /* violeta claro */
+    color: #4b0082;
+    border: 2px solid #6a0dad;
+}
+
+.alert-danger {
+    background-color: #ffcccc;
+    color: #990000;
+    border: 2px solid #cc0000;
+}
+
+/* Footer responsive y ancho completo */
+footer {
+    width: 100%;
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Íconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #ffccff;
+}
+
+/* Mantener estilo personalizado en la sección Categorías */
+#categorias h2,
+#categorias h3 {
+    color: #6a0dad;
+    /* violeta */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#categorias .card {
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    
+}
+
+#categorias .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(106, 13, 173, 0.3);
+}
+
+/* Color violeta personalizado para el navbar */
+.bg-violet {
+    background-color: #6a0dad;
+    /* violeta */
+}
